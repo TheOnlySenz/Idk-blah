@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button onclick="toggleSurprise()">🎁 Click Here for a Surprise! 🎁</button>
+    <div id="surprise-container" class="container" style="display: none;">
+        <h1>Hey Kiddo(jk)</h1>
+        <p>I noticed you've been feeling down lately, and I just wanted to remind you how amazing you are. Here's a little something to brighten your day!</p>
+
+        <div class="message-section">
+            <h2>A Special Message</h2>
+            <p>STOP THINKING ABOUT KYS EVERYTIME KID</p>
+        </div>
+
+        <div class="quotes-section">
+            <h2>Encouraging Quotes</h2>
+            <ul>
+                <li>"The best way to predict the future is to create it." - Abraham Lincoln</li>
+                <li>"You are stronger than you think." - Unknown</li>
+                <li>"Keep your face always toward the sunshine, and shadows will fall behind you." - Walt Whitman</li>
+            </ul>
+        </div>
+
+        <div class="images-section">
+            <h2>Some Lovely Images</h2>
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+
+        <div class="songs-section">
+            <h2>Listen to Them</h2>
+            <ul>
+                <li><a href="[https://open.spotify.com/track/3SHzryOvW32d14GD0WIdCU?si=ukZ7fPDzSf-vxeeD2OObZA]">Song 1</a></li>
+                <li><a href="[https://open.spotify.com/track/4voyxLMKW2h4tKPniPucSf?si=2Lfq5aU8Rzm0BfGWAgbeJw]">Song 2</a></li>
+                <li><a href="[https://open.spotify.com/track/44vaEjWRMa9rKiSEBOQ81Z?si=WqGXNVWWRNa44uCJWacPvw]">Song 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleSurprise() {
+            var surpriseContainer = document.getElementById("surprise-container");
+            if (surpriseContainer.style.display === "block") {
+                surpriseContainer.style.display = "none";
+            } else {
+                surpriseContainer.style.display = "block";
+            }
+        }
+    </script>
+</body>
