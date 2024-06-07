@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+    color: #555;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: none; /* Initially hidden */
+    max-width: 800px;
+    margin: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Typography */
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff69b4;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4682b4;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff69b4;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e854a8;
+}
+
+/* Sections */
+.message-section,
+.quotes-section,
+.images-section,
+.songs-section {
+    background-color: #fff5f7;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, li {
+        font-size: 1em;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    .message-section,
+    .quotes-section,
+    .images-section,
+    .songs-section {
+        padding: 20px;
+        margin: 15px 0;
+    }
+}
